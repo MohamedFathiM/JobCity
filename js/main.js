@@ -91,15 +91,15 @@ $(document).ready(function(){
   });
 
 
-  var btn = $('#button');
+  var btn = $('#buttonTopBottom');
 
   $(window).scroll(function() {
     if ($(window).scrollTop() > 300) {
-      btn.removeClass('hide');
-      btn.addClass('show');
+      btn.removeClass('hideButtonTop');
+      btn.addClass('showButtonTop');
       
     } else {
-      btn.removeClass('show');
+      btn.removeClass('showButtonTop');
       
     }
   });
