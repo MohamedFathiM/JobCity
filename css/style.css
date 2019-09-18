@@ -1,0 +1,597 @@
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    padding:0;
+    margin:0;
+    font-family:sans-serif;
+}
+
+
+
+/*Preloader*/
+
+
+.flex-center {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  
+  .preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #60D7A9;
+    z-index:9999;
+  }
+
+.dots .dot {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    margin: 0 10px 0 10px;
+    border-radius: 50%;
+    background: #FFF;
+    -webkit-animation: dot-dot-dot 1.4s linear infinite;
+    animation: dot-dot-dot 1.4s linear infinite;
+  }
+  
+  .dots .dot:nth-child(2) {
+    animation-delay: .2s;
+  }
+  
+  .dots .dot:nth-child(3) {
+    animation-delay: .4s;
+  }
+  
+  @keyframes dot-dot-dot {
+    0%, 60%, 100% {
+      -webkit-transform: initial;
+        -ms-transform: initial;
+          transform: initial;
+    }
+    30% {
+      -webkit-transform: translateY(-25px);
+        -ms-transform: translateY(-25px);
+          transform: translateY(-25px);
+    }
+  }
+
+ /*End OF Preloader*/
+
+  /*menu-bar */
+ .menu-bar{
+    background-image:linear-gradient(to right ,#6db9ef,#7ce08a);
+}
+
+.fixed-top{
+    box-shadow:0 10px 10px -10px rgba(0,0,0,.35);
+   
+}
+.nav a{
+    color:white;
+}
+.nav-link{
+    font-size:16px;
+    color:#fff!important;
+    margin:2px;
+}
+.nav-link:hover{
+    font-weight: bold;
+}
+#logo{
+    line-height:16px;
+}
+#logo a span {
+    font-size:24px;
+    color:rgb(224, 243, 56);
+    font-weight:bold;
+}
+
+#logo #icon{
+    color:rgb(224, 243, 56);
+    margin-right:7px;
+    font-size:20px;
+    float:left;
+}
+.navbar-nav{
+    text-align:right;
+}
+.menu-bar .navbar-toggler{
+    padding-right:0;
+    outline:none;
+    border:none;
+}
+
+.navbar-nav li:last-child{
+    border-left:3px solid rgb(224, 243, 56);;
+}
+
+
+/*------------------background and Say-about Slider - --------------------------- */
+.banner{
+    height:80vh;
+    background-size:cover;
+    background-position:center;
+    color:#fff;
+    margin-top:60px;
+    
+    
+}
+.owl-carousel{
+    z-index: 1 !important;
+}
+
+.owl-carousel .owl-nav .owl-next, .owl-carousel .owl-nav .owl-prev{
+    position:absolute;
+    top:50%;
+    transform:translateY(-90px)
+}
+.owl-carousel .owl-nav .owl-next{
+    right:0;
+}
+
+.owl-carousel .owl-nav .owl-next span, .owl-carousel .owl-nav .owl-prev span {
+    font-size:80px;
+    color:white;
+}
+
+.owl-carousel .owl-dots{
+    left:46%;
+    position:absolute;
+    top:85%;
+}
+.owl-carousel button.owl-dot{
+
+    background:white;
+    width:10px;
+    height:10px;
+    margin-right:10px;
+}
+
+.owl-carousel button.owl-dot.active{
+    background:greenyellow;
+}
+.banner h1{
+    padding-top:170px;
+    font-size:50px;
+    letter-spacing:6px;
+    font-weight:600;
+    text-shadow:0 0 30px rgba(0,0,0,0.5);
+}
+
+
+/*------------------End Of Slider -------------------*/
+
+
+/*Search for jobs form */
+.search-job{
+    position:relative;
+    padding:30px 0 ; 
+    margin:-50px 6% 50px;
+    background-image:linear-gradient(to right , #6db9ef,#7ce08a);
+    z-index: 2 ;
+}
+
+
+.search-job .form-control{
+max-width:250px;
+display:inline-flex;
+margin:10px 5px;
+border-radius:0;
+box-shadow : none !important;
+border:none !important;
+}
+.search-job .btn-primary{
+    border-radius:0;
+    display:inline-flex;
+    margin:5px;
+    padding:5px 20px;
+    
+}
+
+
+/*the companies  */
+
+#rec{
+    padding-top:50px;
+    padding-bottom:100px;
+    margin-top:30px;
+}
+
+#rec h3{
+    text-align:center;
+    padding-bottom:40px;
+    text-transform: uppercase;
+}
+
+h3::before{
+    content:"";
+    background-image:linear-gradient(to right , #6db9ef,#7ce08a);
+    width:50px;
+    height:30px;
+    position: absolute;
+    z-index:-10;
+    margin-top:-15px;
+    border-top-left-radius:70px;
+    border-bottom-right-radius:90px;
+}
+
+#rect img{
+    max-width:100px;
+    margin:10px 20px;
+}
+
+#jobs{
+    background:#f8f8fa;
+    padding:50px 0 ;
+}
+
+/*latest comapny details */
+
+.comapny-details{
+    box-shadow:0 2px 70px 0 rgba(110,130,208,.18);
+    border-radius:5px;
+    margin-bottom:5px;
+}
+
+.job-update{
+    background:white;
+    padding:10px 20px ;
+    border-radius:5px;
+}
+
+.job-update .icon{
+    margin-top:5px;
+    margin-right:10px;
+    color:#77d1b1;
+}
+
+.job-update small { 
+    background:#efefef;
+    padding: 0 5px ; 
+    margin:0 5px;
+}
+
+.job-update p { 
+    margin-bottom:0 !important;
+}
+
+.job-update a{
+    text-decoration: none !important;
+    float:right;
+    color:#b6bed2;
+}
+
+.apply-btn {
+    height:40px;
+    background-image:linear-gradient(to right , #6db9ef,#7ce08a);
+    padding:7px;
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius:5px;
+
+}
+
+.apply-btn .btn-primary { 
+    padding:0 30px;
+    float:right;
+    border-radius:0;
+    box-shadow:none !important;
+    background:transparent;
+    border:1px solid white;
+}
+
+
+/*navigation -- pagination */
+.page-link li {
+    height:25px;
+    width:25px;
+    list-style:none;
+    display:inline-block;
+    cursor:pointer;
+    line-height:25px;
+}
+
+.page-link li:hover, .active{
+    background-image:linear-gradient(to right , #6db9ef,#7ce08a);
+    
+}
+.left-arrow{
+    color:#999;
+}
+.right-arrow{
+    color:#29b929;
+}
+
+
+/* Site Status */
+
+.site-states{
+    padding:100px 0;
+}
+
+.site-states h3{
+    margin-bottom:30px;
+}
+
+.site-states .col-6:nth-child(odd) .stats-box{
+    background-image:linear-gradient(to right , #bdf1c4,#7ce08a);
+}
+.stats-box{
+    padding:30px;
+    border-radius:10px;
+    margin:20px 0;
+    box-shadow:0 2px 40px 0 rgba(90,100,208,0.4);
+}
+
+.stats-box .icon{
+    font-size:30px;
+    margin-right:10px;
+    margin-bottom:3px;
+}
+
+.stats-box small{
+    font-size:25px;
+}
+
+
+/*apps banner */
+#app-banner{
+    background-image:linear-gradient(to right , #6db9ef,#7ce08a);
+    padding:50px 0;
+}
+#app-banner h1{
+    margin-top:20px;
+    color:white;
+}
+
+#app-banner img{
+    width:150px;
+    margin:50px 0 ; 
+    height:50px;
+}
+
+
+
+/*say about */
+#sayAll{
+    background-image:url('../img/say.jpg');
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding:20px 50px;
+   
+}
+#signIn{
+    width:100%;
+    z-index : 1000;
+    height:300px;
+    background:transparent;
+    
+    
+}
+
+#signIn #logo {
+transform:translateX(160px);
+font-size:20px;
+margin-top:50px;
+}
+
+#signIn #logo .navbar-brand{
+    margin-left:40px;
+}
+#signIn .button{
+    bottom:20px;
+}
+
+#say{
+    height:100%;
+    line-height:35px;
+    margin-top:20px;
+    color:white;
+    margin-bottom:100px;
+   
+
+}
+
+#sayAll h1{
+    background:#e0f338;
+    padding-left:20px;
+    color:black;
+}
+#writer{
+    float:right;
+    line-height:20px;
+    letter-spacing:1px;
+    color:white;
+    font-weight: bold;
+}
+
+#writerImg img{
+    float:right;
+    border:2px solid white;
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    margin-right:10px;
+    margin-top:-10px;
+}
+
+/*customize for say about slider */
+#slide{
+    padding:30px;
+    text-align:justify;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),wheat;
+    color:black
+}
+
+#slideSay .owl-nav .owl-next span, #slideSay .owl-nav .owl-prev span{
+    font-size:0;
+}
+
+#slideSay .owl-dots{
+    top:100%
+}
+
+
+
+/*form sign up and form sign in */
+.modal-bg{
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,0.7);
+    position:absolute;
+    top:0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    z-index:1031;
+    display:none;
+    transition:width 2s ;
+}
+.modal{
+    width:60%;
+    height:500px;
+    background-color:white;
+    position:relative;
+    display:block;
+}
+.modal img{
+    /*width:150px;*/
+    height:100px;
+    margin:30px auto;
+    display:flex;
+    text-align:center;
+    justify-content: center;
+}
+.modal .form{
+  margin:30px auto; 
+  text-align:center;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.modal .form input{
+    margin:5px auto;
+    width:70%;
+    padding:5px;
+    outline:none;
+    font-size:15px;
+    transition:all 2s ;
+}
+
+@media(min-width:720px){
+    .modal .form input{
+        width:300px;
+    }
+    .modal{
+        width:50%;
+    }
+
+    .modal .button{
+        padding-bottom:40px;
+    }
+
+}
+.modal .form .button{
+    font-size:20px;
+    background-color:green;
+    padding:10px;
+    color:white;
+    text-decoration: none;
+    border-radius:5px;
+    border:0;
+}
+
+.close{
+    position:absolute;
+    right:15px;
+    top:10px;
+    font-size:30px;
+    transform:rotate(45deg);
+    cursor:pointer;
+}
+
+/*End of the form Sign Up */
+
+
+/*Footer */
+#footer{
+    background:#f8f9fd;
+    padding:20px 10px 8px;
+}
+
+.footer-img{
+    margin:30px 0;
+}
+
+#footer p {
+    color:#333;
+}
+
+#footer .icon {
+    font-size:30px;
+}
+
+#footer #foot{
+    font-size:15px;
+}
+hr{
+    background:green;
+}
+
+.hide{
+    transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+     opacity: 0;
+     visibility: hidden;
+}
+
+
+.show {
+    opacity: 1;
+    visibility: visible;
+    display: inline-block;
+    background-color: #FF9800;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    margin: 30px;
+    position: fixed;
+    bottom: 15px;
+    right: 5px;
+    transition: background-color .3s;
+    z-index: 1000;
+  }
+  #button:hover {
+    cursor: pointer;
+    background-color: #333;
+  }
+  #button:active {
+    background-color: #555;
+  }
+
+  #button::after {
+    content: "\02934";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+  }
+
+
